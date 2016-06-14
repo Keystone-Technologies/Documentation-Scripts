@@ -13,8 +13,8 @@ Options:
   -organization <string> - Declare the name of the organization
 
 .EXAMPLE
-./ActiveDirectory.ps1 -s -c -url api.example.com
-./ActiveDirectory.ps1 -file C:\adout.csv
+.\ActiveDirectory.ps1 -s -c -url api.example.com
+.\ActiveDirectory.ps1 -file C:\adout.csv
 
 .NOTES
 Author: Caleb Albers

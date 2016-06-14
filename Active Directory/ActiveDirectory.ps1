@@ -6,14 +6,15 @@ This script grabs all domains in the current forest along with servers hosting a
 .DESCRIPTION
 Options:
 
-  -help               - Display the current help menu
-  -silent             - Run the script without printing anything
-  -url  <string>      - Give a URL to POST script output to
-  -file <string>      - Declare a location to save script output to as a csv
+  -help                  - Display the current help menu
+  -silent                - Run the script without printing anything
+  -url  <string>         - Give a URL to POST script output to
+  -file <string>         - Declare a location to save script output to as a csv
+  -organization <string> - Declare the name of the organization
 
 .EXAMPLE
-./ADScraper.ps1 -s -c -url api.example.com
-./ADScraper.ps1 -file C:\adout.csv
+./ActiveDirectory.ps1 -s -c -url api.example.com
+./ActiveDirectory.ps1 -file C:\adout.csv
 
 .NOTES
 Author: Caleb Albers

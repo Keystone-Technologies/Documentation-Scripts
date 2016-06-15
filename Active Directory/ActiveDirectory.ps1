@@ -101,12 +101,12 @@ else {
     $Domains = (Get-ADForest).domains
 
     foreach($Domain in $Domains) {
-        $ADShortName = (Get-ADDomain).Name
+        $ADShortName = (Get-ADDomain -identity $Domain).Name
 
         # Get FSMO Roles
-        $RIDMaster = (Get-ADDomain).RIDMaster
-        $PDCEmulator = (Get-ADDOmain).PDCEmulator
-        $InfrastructureMaster = (Get-ADDomain).INfrastructureMaster
+        $RIDMaster = (Get-ADDomain -identity $Domain).RIDMaster
+        $PDCEmulator = (Get-ADDOmain -identity $Domain).PDCEmulator
+        $InfrastructureMaster = (Get-ADDomain -identity $Domain).INfrastructureMaster
 
         if(!$silent){writeOutput}
         if($url -or $file -or $ftp) {

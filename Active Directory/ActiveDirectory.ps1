@@ -95,7 +95,7 @@ else {
     $ADFunctionalLevel = (Get-ADForest).ForestMode
 
     # Get Global Catalog Servers (Domain Controllers)
-    $GlobalCatalogs = (Get-ADForest).GlobalCatalogs
+    $GlobalCatalogs = (Get-ADForest).GlobalCatalogs -join ','
 
     # Get domain info
     $Domains = (Get-ADForest).domains

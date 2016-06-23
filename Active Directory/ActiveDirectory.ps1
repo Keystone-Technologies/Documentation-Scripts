@@ -123,10 +123,8 @@ else {
         }
     }
 
-
     # Get domain info
     $Domains = (Get-ADForest).domains
-
     foreach($Domain in $Domains) {
         $ADShortName = (Get-ADDomain -identity $Domain).Name
 

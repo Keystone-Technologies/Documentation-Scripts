@@ -6,11 +6,11 @@ This script grabs all domains in the current forest along with servers hosting a
 .DESCRIPTION
 Options:
 
-  -help               - Display the current help menu
-  -silent             - Run the script without printing anything
-  -FQDN               - Show Fully Qualified Domain Name (server.domain.tld) instead of hostname
-  -url  <string>      - Give a URL to POST script output to
-  -file <string>      - Declare a location to save script output to as a csv
+    -help               - Display the current help menu
+    -silent             - Run the script without printing anything
+    -FQDN               - Show Fully Qualified Domain Name (server.domain.tld) instead of hostname
+    -url  <string>      - Give a URL to POST script output to
+    -file <string>      - Declare a location to save script output to as a csv
 
 .EXAMPLE
 ./ADScraper.ps1 -s -c -url api.example.com
